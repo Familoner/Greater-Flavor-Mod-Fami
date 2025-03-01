@@ -412,12 +412,15 @@ country_event = {
         tag = BRZ
 		government = democracy
         year = 1930
+        OR = {
         average_militancy = 3
+        NOT = { has_country_modifier = democratic_nation }
+        }
         month = 3
         NOT = { month = 11 }
     }
 
-    mean_time_to_happen = { months = 12 }
+    mean_time_to_happen = { months = 6 }
 
     option = {
         name = "vargasopt1"
@@ -489,6 +492,42 @@ country_event = {
             }
         }
         
+    }
+}
+#Liberal Alliance military victory
+country_event = {
+    id = 50015
+    name = "EVTNAME50015"
+    desc = "EVTDESC50015"
+    picture = vargas
+    fire_only_once = yes
+    
+    trigger = {
+        tag = BRZ
+        has_country_flag = revolution1930BRZ
+        OR = { 
+            truce_with = RGS
+            capital_scope = { controlled_by = RGS }
+        }
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "EVT50015PTA"
+        clr_country_flag = revolution1930BRZ
+        set_country_flag = estado_novo
+        annex_to = RGS
+        government = presidential_dictatorship
+        political_reform = none_voting
+        political_reform = party_appointed
+        political_reform = restricted_meeting
+        political_reform = censored_press
+        political_reform = state_controlled
+        political_reform = harassment
+        political_reform = first_past_the_post
+        ruling_party_ideology = conservative
+
     }
 }
 
