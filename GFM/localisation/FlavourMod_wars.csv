@@ -298,3 +298,5 @@ NORMAL_WAR_LIBERATE_PUPPET_NO_INFAMY_NAME_TUR_FRA;The$ORDER$Turkish War of Alger
 AGRESSION_WAR_LIBERATE_PUPPET_NO_INFAMY_NAME_TUR_BOR;The$ORDER$Turkish War of Algerian Liberation;;;;;;;;;;;;;
 NORMAL_WAR_LIBERATE_PUPPET_NO_INFAMY_NAME_ALA_FRA;The$ORDER$Alawite War of Algerian Liberation;;;;;;;;;;;;;
 AGRESSION_WAR_LIBERATE_PUPPET_NO_INFAMY_NAME_ALA_BOR;The$ORDER$Alawite War of Algerian Liberation;;;;;;;;;;;;;
+NORMAL_WAR_CIVIL_WAR_NAME_BRZ_RGS;The Revolution of $YEAR$;;;;;;;;;;;;;
+AGREESSION_WAR_CIVIL_WAR_NAME_BRZ_RGS;The Revolution of $YEAR$;;;;;;;;;;;;;

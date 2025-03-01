@@ -430,6 +430,7 @@ country_event = {
         political_reform = harassment
         political_reform = first_past_the_post
         ruling_party_ideology = conservative
+        set_country_flag = estado_novo
 
         any_owned = {
             limit = {
@@ -449,15 +450,21 @@ country_event = {
     }
     option = {
         name = "vargasopt2"
+        set_country_flag = revolution1930BRZ
         any_owned = {
             limit = {
+                OR = {
                 is_core = RGS
+                is_core = MGR
+                province_id = 2428
+                }
             }
             secede_province = RGS
         }
         RGS = {
             capital = 2463
             leadership = 80
+            government = prov_gov_conservative
         }
         war = {
             target = RGS
@@ -468,6 +475,20 @@ country_event = {
                 casus_belli = status_quo
             }
         }
+        any_owned = {
+            limit = { is_colonial = no }
+            any_pop = {
+                scaled_militancy = {
+                    factor = 3
+                    ideology = liberal
+                }
+                scaled_consciousness = {
+                    factor = 4
+                    ideology = liberal
+                }
+            }
+        }
+        
     }
 }
 
